@@ -1,4 +1,8 @@
 theme: jekyll-theme-hacker
 title: "Snippet Vault"
-description: "Welcome to my GitHub Pages site."
+description: "Where Code Comes to Chill Before It’s Useful Again"
 url: "https://nevalsingh.github.io"
+header_pages:
+  - index.md
+  - about.md
+  - blog.md
