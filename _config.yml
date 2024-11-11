@@ -1,7 +1,7 @@
 theme: jekyll-theme-hacker
 title: "Snippet Vault"
 description: "Where Code Comes to Chill Before It’s Useful Again"
-url: "https://nevalsingh.github.io"
+github: false
 header_pages:
   - index.md
   - about.md
