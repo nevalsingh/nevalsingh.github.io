@@ -10,6 +10,7 @@ In this post, we'll explore a code snippet that configures Redis or Valkey cachi
 ## Code Example
 ### Cache DI Configuration
 ```csharp
+// CacheConfiguration.cs
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -84,6 +85,7 @@ public static class CacheConfiguration
 The `CacheOptions` class is a configuration model that defines settings for connecting to a Redis or Valkey cache. This class includes properties for host, port, authentication credentials, and the target database key. Using data annotations, certain properties are validated to ensure required values are provided.
 
 ```csharp
+// CacheOptions.cs
 using System.ComponentModel.DataAnnotations;
 
 namespace Tools.Core.Model.Options;
@@ -133,17 +135,17 @@ If CacheOptions is not found, a Exception is thrown.
 #### RedisConfiguration:
 
 This object defines how the application connects to Redis, including:
-Hosts: Specifies the Redis server’s host and port.
-Password and User: Provides optional authentication details if Redis requires credentials.
-Server Enumeration Strategy: Defines how the client should discover Redis servers and handle unreachable servers.
-SSL Setting: SSL is enabled if the environment is not local, enhancing security for production deployments.
+- Hosts: Specifies the Redis server’s host and port.
+- Password and User: Provides optional authentication details if Redis requires credentials.
+- Server Enumeration Strategy: Defines how the client should discover Redis servers and handle unreachable servers.
+- SSL Setting: With come conditional logic and the usage `IWebHostEnvironment` SSL can be enabled if the environment is not local, enhancing security for production deployments.
 
 #### Service Registrations:
 
 The code registers several key Redis services into the DI container:
-IRedisClient: The primary interface for interacting with Redis.
-IRedisConnectionPoolManager: Manages Redis connections for performance and reliability.
-ISerializer: Uses NewtonsoftSerializer to handle JSON serialization for Redis operations.
+- IRedisClient: The primary interface for interacting with Redis.
+- IRedisConnectionPoolManager: Manages Redis connections for performance and reliability.
+- ISerializer: Uses NewtonsoftSerializer to handle JSON serialization for Redis operations.
 
 #### Redis Database Selection:
 
