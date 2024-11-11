@@ -1,5 +1,9 @@
-# Setting Up Redis Caching in .Net 8 with Dependency Injection
-
+---
+layout: post
+title: "Setting Up Redis Caching in .Net 8 with Dependency Injection"
+date: 2024-11-11
+tags: .Net 8, Redis, Valkey, Cache
+---
 In this post, we'll explore a code snippet that configures Redis or Valkey caching for an .Net 8 application using the dependency injection (DI) container. This setup uses the `StackExchange.Redis.Extensions` library to streamline Redis integration, allowing our application to handle cache connections and configuration effortlessly. Let's walk through the code and see how each part works.
 
 ## Code Example
