@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Setting Up Redis Caching in .Net 8 with Dependency Injection"
+title: "Setting Up External Caching in .Net 8 with Dependency Injection"
 date: 2024-11-11
 tags: C# .Net8 Redis Valkey Caching
 author: Nev Singh
