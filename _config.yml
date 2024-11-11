@@ -1,9 +1,20 @@
 theme: jekyll-theme-hacker
 title: "Snippet Vault"
 description: "Where Code Comes to Chill Before It’s Useful Again"
+
+# GitHub settings
 github:
   is_project_page: false
+
 header_pages:
   - index.md
   - about.md
   - blog.md
+
+# Custom CSS configuration
+sass:
+  load_paths:
+    - assets/css
+
+include:
+  - assets/css/custom.css
