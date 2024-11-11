@@ -11,10 +11,10 @@ header_pages:
   - about.md
   - blog.md
 
-# Custom CSS configuration
-sass:
-  load_paths:
-    - assets/css
-
-include:
-  - assets/css/custom.css
+inject_html:
+  head: |
+    <style>
+      .github-corner {
+          display: none !important;
+      }
+    </style>
