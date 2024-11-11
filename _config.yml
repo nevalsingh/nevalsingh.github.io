@@ -2,19 +2,11 @@ theme: jekyll-theme-hacker
 title: "Snippet Vault"
 description: "Where Code Comes to Chill Before It’s Useful Again"
 
-# GitHub settings
 github:
-  is_project_page: false
+  url: https://github.com/nevalsingh
+  repository_url: https://github.com/nevalsingh
 
 header_pages:
   - index.md
   - about.md
   - blog.md
-
-inject_html:
-  head: |
-    <style>
-      .github-corner {
-          display: none !important;
-      }
-    </style>
